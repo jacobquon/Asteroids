@@ -1,9 +1,3 @@
-/**
- * CIS 120 Game HW
- * (c) University of Pennsylvania
- * @version 2.1, Apr 2017
- */
-
 // imports necessary libraries for Java swing
 import java.awt.*;
 import java.awt.event.*;
@@ -19,11 +13,9 @@ import javax.swing.*;
  */
 public class Game implements Runnable {
     public void run() {
-        // NOTE : recall that the 'final' keyword notes immutability even for local variables.
 
         // Top-level frame in which game components live
-        // Be sure to change "TOP LEVEL FRAME" to the name of your game
-        final JFrame frame = new JFrame("TOP LEVEL FRAME");
+        final JFrame frame = new JFrame("Asteroids");
         frame.setLocation(300, 300);
 
         // Status panel
@@ -126,7 +118,6 @@ public class Game implements Runnable {
             }
         });
         
-        // Note here that when we add an action listener to the reset button, we define it as an
         // anonymous inner class that is an instance of ActionListener with its actionPerformed()
         // method overridden. When the button is pressed, actionPerformed() will be called.
         final JButton reset = new JButton("Reset");
