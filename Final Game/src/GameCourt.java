@@ -1,9 +1,3 @@
-/**
- * CIS 120 Game HW
- * (c) University of Pennsylvania
- * @version 2.1, Apr 2017
- */
-
 import java.awt.*;
 import java.awt.event.*;
 import java.io.BufferedReader;
@@ -24,9 +18,7 @@ import javax.swing.*;
 /**
  * GameCourt
  * 
- * This class holds the primary game logic for how different objects interact with one another. Take
- * time to understand how the timer interacts with the different methods and how it repaints the GUI
- * on every tick().
+ * This class holds the primary game logic for how different objects interact with one another.
  */
 @SuppressWarnings("serial")
 public class GameCourt extends JPanel {
